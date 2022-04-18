@@ -12,7 +12,7 @@ class Lnmp
 
     # Configure The Box
     config.vm.define settings['name'] ||= 'vagrant-lnmp'
-    config.vm.box = settings['box'] ||= 'ubuntu-lnmp'
+    config.vm.box = settings['box'] ||= 'cluster/lnmp'
     config.vm.hostname = settings['hostname'] ||= 'vagrant-lnmp'
 
     # Configure A Private Network IP
