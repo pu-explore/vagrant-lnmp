@@ -79,8 +79,8 @@ class Lnmp
     end
 
     # Creates folder for opt-in features lockfiles
-    config.vm.provision "mk_features", type: "shell", inline: "mkdir -p /home/vagrant/.features"
-    config.vm.provision "own_features", type: "shell", inline: "chown -Rf vagrant:vagrant /home/vagrant/.features"
+    config.vm.provision "Mkdir Features", type: "shell", inline: "mkdir -p /home/vagrant/.features"
+    config.vm.provision "Chown Features", type: "shell", inline: "chown -Rf vagrant:vagrant /home/vagrant/.features"
 
     #change software source
     if settings.has_key?('sources')
@@ -165,6 +165,8 @@ class Lnmp
           s.args = ['127.0.0.1', site['map']]
         end
       end
+      # Restart Nginx
+      config.vm.provision "Restart Nginx", type: "shell", inline: "systemctl restart nginx"
     end
 
     # Configure All Of The Configured Databases
