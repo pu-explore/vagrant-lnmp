@@ -35,7 +35,7 @@ memory: 2048
 - 清华：https://mirrors.tuna.tsinghua.edu.cn
 - 中科大：https://mirrors.ustc.edu.cn
 
-### 多站点时可配置IP默认站点：`default`
+# 多站点时可配置IP默认站点：`default`
 
 ```yaml
 # Lnmp.yaml
@@ -48,3 +48,9 @@ sites:
 ```
 
 > 配置默认站点，可实现局域网内通过IP:8000直接访问对应的站点，而无需设置域名
+
+# 账户信息
+
+Linux：vagrant / vagrant
+
+Mysql：vagrant / password
