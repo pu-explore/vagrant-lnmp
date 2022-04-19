@@ -6,7 +6,7 @@
 
 - Redis server v=5.0.7 (Ubuntu)
 
-- PHP 7.4.3 (Ubuntu)
+- PHP 7.4.3 (包含php-swoole扩展) (Ubuntu)
 
 - composer
 
